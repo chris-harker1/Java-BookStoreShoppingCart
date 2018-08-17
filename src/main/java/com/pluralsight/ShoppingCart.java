@@ -30,6 +30,16 @@ public class ShoppingCart {
 	 }
 	 
  }
+ 
+public void updateCartItem(int index, int quantity) {
+	
+	try {
+		CartItem item = cartItems.get(index);
+		item.setQuantity(quantity);
+	}catch(Exception IndexOutOfBoundsException) {
+		
+	}
+}
 
  public CartItem getCartItem(int iItemIndex) {
   CartItem cartItem = null;
