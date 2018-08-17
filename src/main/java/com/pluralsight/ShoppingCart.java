@@ -21,6 +21,15 @@ public class ShoppingCart {
  public void addCartItem(CartItem cartItem) {
   cartItems.add(cartItem);
  }
+ 
+ public void deleteCartItem(int index) {
+	 try {
+		cartItems.remove(index); 
+	 }catch(Exception IndexOutOfBoundsException) {
+		 
+	 }
+	 
+ }
 
  public CartItem getCartItem(int iItemIndex) {
   CartItem cartItem = null;
